@@ -1,0 +1,279 @@
+* {
+  font-family: "Geologica", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 1, 1, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+}
+.nav div a {
+  padding: 8px;
+  text-decoration: none;
+}
+.nav div a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  transition: 500ms;
+}
+
+.logo {
+  filter: invert(1);
+}
+
+.models {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+
+.menu {
+  width: 15vw;
+  display: flex;
+  justify-content: space-around;
+}
+.menu .desktop {
+  display: block;
+}
+.menu .mobile {
+  display: none;
+  width: 60px;
+}
+.menu a:hover{
+  cursor: pointer;
+}
+
+#homepage {
+  margin-bottom: -5px;
+  position: relative;
+}
+
+.pages-div {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  height: 70%;
+}
+.pages-div .page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.pages-div .page-content h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.pages-div .page-content p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#myVideo {
+  z-index: -2113245;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+
+  object-fit: cover;
+}
+
+#model-s {
+  position: relative;
+  background-image: url(/media/2020_tesla_model_s_performance-1920x1080.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#model-3 {
+  position: relative;
+  background-image: url(/media/vorsteiner_tesla_model_3_volta_2019_4k_3-1920x1080.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#model-x {
+  position: relative;
+  background-image: url(/media/2017_novitec_tesla_model_x-1920x1080.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#model-y {
+  position: relative;
+  background-image: url(/media/tesla_model_y_2020_4k-1920x1080.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#solar-roof {
+  position: relative;
+  background-image: url(/media/tesla-solar-roof-powerwall-energy.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#solar-panel {
+  position: relative;
+  background-image: url(/media/tesla-solar-roof_100606415.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#power-wall {
+  position: relative;
+  background-image: url(/media/powerwall.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+button {
+  transition: 1000ms;
+  font-size: 20px;
+  width: 300px;
+  height: 40px;
+  border: 2px solid white;
+  border-color: #dcdcdc;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 10px 10px;
+}
+
+button:hover {
+  transition: 1000ms;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: black;
+}
+
+#panel {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  height: 100vh;
+  width: 250px;
+}
+
+#panel img {
+  width: 13px;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+}
+#panel img:hover {
+  cursor: pointer;
+}
+#panel .menu-list a {
+  border: 3px;
+  padding: 5px;
+  text-align: left;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+}
+#panel .menu-list a:hover {
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+  transition: 200ms;
+}
+#panel .menu-list {
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  height: 90vh;
+}
+
+@media only screen and (max-width: 1030px) {
+  /* For mobile phones: */
+
+  .nav {
+    padding: 10px 0px;
+    justify-content: space-around;
+  }
+
+  .models {
+    display: none;
+  }
+
+  .menu .desktop {
+    display: none;
+  }
+
+  .menu .mobile {
+    display: block;
+    font-size: 15px;
+    border: none;
+    height: 20px;
+  }
+
+  .page-content div button {
+    width: 150px;
+  }
+
+  #panel {
+    width: 200px;
+  }
+}

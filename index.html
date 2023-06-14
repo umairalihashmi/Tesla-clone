@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tesla</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="/media/tesla_logo.png" alt="logo" width="150vw" />
+        </a>
+      </div>
+      <div class="models">
+        <a href="#model-s">Model S</a>
+        <a href="#model-3">Model 3</a>
+        <a href="#model-x">Model X</a>
+        <a href="#model-y">Model Y</a>
+        <a href="#solar-roof">Solar Roof</a>
+        <a href="#solar-panel">Solar Panel</a>
+        <a href="#power-wall">Power Wall</a>
+      </div>
+      <div class="menu">
+        <a class="desktop" href="">Shop</a>
+        <a class="desktop" href="">Account</a>
+        <a class="desktop" onclick="panel_on()">Menu</a>
+        <button class="mobile" onclick="panel_on()">Menu</button>
+      </div>
+    </div>
+
+    <div id="homepage">
+      <video autoplay muted loop id="myVideo">
+        <source
+          src="/media/Untitled video - Made with Clipchamp.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="pages-div">
+        <div class="page-content">
+          <div>
+            <h1>Experience Tesla</h1>
+            <p>Schedule a Demo Drive Today</p>
+          </div>
+          <div>
+            <button>Demo Drive</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="model-s">
+      <div class="pages-div">
+        <div class="page-content">
+          <div>
+            <h1>Model S</h1>
+            <p>Starting from $68,000</p>
+          </div>
+          <div>
+            <button>Demo Drive</button>
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="model-3">
+      <div class="pages-div">
+        <div class="page-content">
+          <div>
+            <h1>Model 3</h1>
+            <p>Starting from $33,000</p>
+          </div>
+          <div>
+            <button>Demo Drive</button>
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="model-x">
+      <div class="pages-div">
+        <div class="page-content">
+          <div>
+            <h1>Model X</h1>
+            <p>Starting from $55,000</p>
+          </div>
+          <div>
+            <button>Demo Drive</button>
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="model-y">
+      <div class="pages-div">
+        <div class="page-content">
+          <div>
+            <h1>Model Y</h1>
+            <p>Starting from $43,000</p>
+          </div>
+          <div>
+            <button>Demo Drive</button>
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="solar-roof">
+      <div class="pages-div">
+        <div class="page-content">
+          <div>
+            <h1>Solar Roof</h1>
+            <p>Starting from $34,000</p>
+          </div>
+          <div>
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="solar-panel">
+      <div class="pages-div">
+        <div class="page-content">
+          <div>
+            <h1>Solar Panel</h1>
+            <p>Starting from $7,000</p>
+          </div>
+          <div>
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="power-wall">
+      <div class="pages-div">
+        <div class="page-content">
+          <div>
+            <h1>Power Wall</h1>
+            <p>Starting from $13,000</p>
+          </div>
+          <div>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="panel">
+      <img src="/media/close.png" onclick="panel_off()" alt="" />
+
+      <div class="menu-list">
+        <a href="#model-s">Model S</a>
+        <a href="#model-3">Model 3</a>
+        <a href="#model-x">Model X</a>
+        <a href="#model-y">Model Y</a>
+        <a href="#solar-roof">Solar Roof</a>
+        <a href="#solar-panel">Solar Panel</a>
+        <a href="#power-wall">Power Wall</a>
+      </div>
+    </div>
+
+    <script>
+      function panel_on() {
+        document.getElementById("panel").style.display = "block";
+      }
+      function panel_off() {
+        document.getElementById("panel").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
